@@ -1929,6 +1929,7 @@ blockquote footer cite:before {
 #aside_content .card-archives ul.card-archive-list > .card-archive-list-item,
 #aside_content .card-categories ul.card-category-list > .card-category-list-item {
   padding: 0.15rem 1rem;
+  cursor: pointer;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
@@ -1975,13 +1976,6 @@ blockquote footer cite:before {
 #aside_content .card-archives ul.card-archive-list > .card-archive-list-item.more:hover span,
 #aside_content .card-categories ul.card-category-list > .card-category-list-item.more:hover span {
   padding-right: 0.6rem;
-}
-#aside_content .card-categories ul .card-post-name {
-  overflow: hidden;
-  -o-text-overflow: ellipsis;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  display: block;
 }
 #aside_content .card-categories .card-category-list.child {
   padding: 0 0 0 1.2rem;
@@ -2748,9 +2742,6 @@ blockquote footer cite:before {
   margin: 0 auto;
   padding: 2rem 15px;
   max-width: 1200px;
-  opacity: 1;
-  -ms-filter: none;
-  filter: none;
 }
 #recent-posts {
   width: 75%;
@@ -3447,9 +3438,6 @@ img {
   margin: 0 auto;
   padding: 2rem 15px;
   max-width: 1000px;
-  opacity: 1;
-  -ms-filter: none;
-  filter: none;
 }
 .layout_post img {
   display: block;
@@ -4063,7 +4051,7 @@ img {
   padding: 0.3rem 0 0.8em;
 }
 .has-jax {
-  overflow: visible;
+  overflow: auto;
 }
 figure.gallery-group {
   position: relative;
