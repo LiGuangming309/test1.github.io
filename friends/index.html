@@ -641,6 +641,33 @@
         <div class="card">
 
             
+            <link rel="stylesheet" href="/libs/gitalk/gitalk.css">
+<link rel="stylesheet" href="/css/my-gitalk.css">
+
+<div class="card gitalk-card" data-aos="fade-up">
+    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
+        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+        <span>评论</span>
+    </div>
+    <div id="gitalk-container" class="card-content"></div>
+</div>
+
+<script src="/libs/gitalk/gitalk.min.js"></script>
+<script>
+    let gitalk = new Gitalk({
+        clientID: 'b33f98b14afbe6577eea',
+        clientSecret: '7d7b09f147ca58db9d93da35015085c9df26c001',
+        repo: 'git@github.com:LiGuangming309/ttsdtlbk.github.io.git',
+        owner: 'LiGuangming309',
+        admin: "LiGuangming309",
+        id: '2020-05-24T21-25-30',
+        distractionFreeMode: false  // Facebook-like distraction free mode
+    });
+
+    gitalk.render('gitalk-container');
+</script>
+
+            
 
             
 
@@ -885,8 +912,3 @@ $(function () {
 </body>
 
 </html>
-<!-- 今日天气 -->
-<script type="text/javascript">
-WIDGET = {FID: '0bw5vPcB4v'}
-</script>
-<script type="text/javascript" src="https://apip.weatherdt.com/float/static/js/r.js?v=1111"></script>
