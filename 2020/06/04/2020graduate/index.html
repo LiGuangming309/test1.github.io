@@ -29,6 +29,9 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
+    <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+
+
 <meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="谭天说地课题组" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
@@ -490,7 +493,25 @@
 <li>感谢各合作单位的支持。 虽然我们的合作是双方共赢， 但对于学生来说，缺少了您的支持，毕业的困难会大大增加。</li>
 <li>感谢各位评委的大量点评 在这非常时期，利用云平台，共同开创了答辩新方式。<br>还有很多的感谢之词，只有留待以后见面亲述。<img src="https://imgkr.cn-bj.ufileos.com/16f4448f-50c6-4161-a9c4-d8bec49587cd.png" alt=""><br><img src="https://imgkr.cn-bj.ufileos.com/3dee9175-5f92-400e-a8b5-c06c8e9c38e3.png" alt=""><br>人都喜欢听好话：借邬博士之口所出致谢<img src="https://imgkr.cn-bj.ufileos.com/5427e5c3-e2f9-4dbf-a854-9aaf4272ef21.png" alt=""></li>
 </ol>
-
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
             </div>
             <hr/>
 
